@@ -19,7 +19,7 @@ services:
       - db
   frontend:
     env_file:
-       - ./backend/.env
+      - ./backend/.env
     build: ./frontend/
     command: cp -r /app/build/. /frontend_static/
     volumes:
